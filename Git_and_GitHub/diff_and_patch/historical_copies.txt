@@ -1,0 +1,6 @@
+Historical copies of a file or project are copies you keep for fututre references or in case you wish to go back to a previous state of a project or application you are working on
+This is a manual and deprecated way of doing things and it may become cumbersome when there are so many copies needed in a particular project
+
+
+This is where the essence of version control comes in handy, it allows one to have backup copies of the code and track any changes with ease.
+

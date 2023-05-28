@@ -1,0 +1,71 @@
+You can view the contents of a file by using the command cat
+for instance 
+cat file1.py 
+
+This gives the following info in file1.py:
+
+def add(x, y):
+   print(x+y)
+
+add(20,30)
+
+def subtract(x, y):
+   print(x-y)
+
+num3 = "75"
+num4 = 77.3
+
+#The diff command line can be used to spot the difference between two files
+
+To find the difference between file1 and file2.py, simply use the diff command 
+This gives 2 sections: the first section that reps any changes (c) to a particular line,
+Then any new line additions (a)
+diff file1.py file2.py 
+into the command line 
+
+This gives an output like this
+$ diff file1.py file2.py
+9,10c9,12
+< num3 = "75"
+< num4 = 77.3
+\ No newline at end of file
+---
+> num3 = "4674"
+> num4 = 4993.4
+>
+> #This is an addition
+\ No newline at end of file
+
+
+Here, the line 9,10c9,10 tells that lines 9 to 10 of file1 was changed or replaced by lines 9 and 12 of file2
+
+less than symbol tells that those lines in file1 are not part of file2 while
+greater than symbol tells that those lines in file2 are extra parts of file2 which are not in file1
+
+A good way to actually highlight the additions is to use the prefic -u along with the diff command
+
+diff -u file1.py file2.py
+
+--- file1.py    2023-05-28 13:34:43.050385100 +0100
++++ file2.py    2023-05-28 14:00:24.425179200 +0100
+@@ -6,5 +6,7 @@
+ def subtract(x, y):
+    print(x-y)
+
+-num3 = "75"
+-num4 = 77.3
+\ No newline at end of file
++num3 = "4674"
++num4 = 4993.4
++
++#This is an addition
+\ No newline at end of file
+
+Here the lines with + are the added items to file2 which are not in file1
+While the lines with -  are the lines in file1 which are not part of file2
+
+
+Some other tools that can be used to compare files include meld, KDiff3 and vimDiff
+
+
+
