@@ -1,0 +1,12 @@
+{
+   "python.pythonPath": "\"C:\\Users\\Gabriel Nnamdi\\AppData\\Local\\Programs\\Python\\Python39\\python.exe\"",
+   "launch": {
+   
+      "configurations": [],
+      "compounds": []
+   },
+   "python.terminal.activateEnvInCurrentTerminal": false,
+   "files.autoSave": "afterDelay",
+   "python.analysis.typeCheckingMode": "basic",
+   "editor.wordWrap": "on"
+}
