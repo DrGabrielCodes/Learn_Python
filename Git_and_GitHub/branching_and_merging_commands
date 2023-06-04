@@ -18,3 +18,9 @@ This switches to another branch
 To create another branch and automatically switch to it, use the shortcut command
 git checkout -b new_branch
 
+git branch -d new_branch
+deletes the branch new_branch
+
+
+Merging brnaches
+This is the process of taking an independent snapshot of a branch and merging them into another
