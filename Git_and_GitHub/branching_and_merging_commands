@@ -24,3 +24,11 @@ deletes the branch new_branch
 
 Merging brnaches
 This is the process of taking an independent snapshot of a branch and merging them into another
+To merge branches, firstly switch to the branch you want to merge with another
+git merge other_branch_name
+This merges the current working branch to the other branch
+
+
+Sometimes merging conflicts can occur
+if you wish to stop a conflicting merge, use the git merge --abort command
+This stops the merge and resets the working tree to the last commits before the merge occured.
