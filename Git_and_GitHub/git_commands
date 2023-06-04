@@ -1,0 +1,70 @@
+git init 
+This initializes a folder to be a repository allowing git to store and track files in the folder.
+
+git add 
+This adds all untracked files to a staged status where they can be tracked and ready to be commited to a repository
+
+git add <filename>
+This adds the untracked file name to a staged status where it can be tracked and ready to be commited to a repository
+
+
+git commit 
+This opens up a (default) text editor for a commit message to be set, while commiting/saving all staged files and directories to the repository
+
+git commit -m "Here is a commit message"
+This is a commit command that has a specified commit message, achieved by using the prefix -m
+
+
+git log
+This logs all the commits made in a particular repository, along with the authors of the commit, their email address, when the commit was made, and the commit message
+
+git log -p
+This gives the logs of all commits along with the patches or changes made
+
+
+git show
+shows a particular commit using its ID
+
+git config -l 
+this lists all the configuration settings of a particular repository, stating the author, user email, and other credentials
+
+git status
+Used to view pending files that are unstaged/untracked, and uncommited
+
+git rm name_of_file.py 
+Is used to remove the file with name name_of_file.py
+
+git mv old_name new_name
+used to rename files in a repository from an old_name to a new_name
+Afterwards a commit is needed to save it in the repository
+
+git mv command can also be used to move files between directories
+
+************COMMON WAYS TO REVERT CHANGES***********
+git checkout name_of_file
+reverts changes made to modified files before they get staged. This is for undoing unstaged changes.
+
+git reset HEAD name_of_file
+This unstages a change made to a file in the working tree. This is the counterpart or opposite of git add command.
+
+git commit --amend
+This allows the previous commit to be ammended by the currently staged changed to the repository
+You can change the commit message and get new files committed through this process. This should not be used on a shared repository because it deletes the commit history log.
+
+git revert HEAD
+This creates a new commit with the opposite of what was done in the previous commit. This does not change the history but it rolls back to the previous state of the commit history while creating a new commit.
+The HEAD parameter used here means the last or most recently done commit.
+
+If you need to revert to specific commit done a long time ago. You will need to use its commit ID.
+Just like this 
+
+git revert 14fd0a73eb91b9057917337caabc150af469c0e9
+This reverts or rolls back to a previous commit, while generating a new commit with its own ID.
+
+use the command git log to get a list-like log of all commits made to the repository and their IDs.
+This ID looks like this 14fd0a73eb91b9057917337caabc150af469c0e9
+The ID is called a Hash, it is calculated using an algorithm called SHA1
+
+The git log command can be called with an extra number parameter indicating the number of commit logs you want to see. Say you want to see the last three commits, use the git log -3
+
+

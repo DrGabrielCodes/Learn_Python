@@ -1,0 +1,20 @@
+What is a branch?
+a branch is an independent line of a repository which points to the latest commit in that chain of development history.
+
+By default when a repo is initialized, git creates the master branch. This is usually the known good state of the project, more like the perfect state of the project. This is not where you tryout something new.
+
+If you have to try something new or add a new feature, you need to create a seperate branch. 
+
+git branch 
+This lists all the branches in the repository
+
+git branch branch_name
+This creates a new branch with the name branch_name
+
+To switch to the a new branch or any branch use the checkout command
+git checkout branch_name
+This switches to another branch
+
+To create another branch and automatically switch to it, use the shortcut command
+git checkout -b new_branch
+
