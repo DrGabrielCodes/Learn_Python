@@ -1,7 +1,7 @@
 git init 
 This initializes a folder to be a repository allowing git to store and track files in the folder.
 
-git add 
+git add .
 This adds all untracked files to a staged status where they can be tracked and ready to be commited to a repository
 
 git add <filename>
@@ -13,7 +13,10 @@ This opens up a (default) text editor for a commit message to be set, while comm
 
 git commit -m "Here is a commit message"
 This is a commit command that has a specified commit message, achieved by using the prefix -m
+It commits only staged files to the repository
 
+git commit -a -m
+This commits all modifications made to every tracked file in the repository
 
 git log
 This logs all the commits made in a particular repository, along with the authors of the commit, their email address, when the commit was made, and the commit message
@@ -30,6 +33,7 @@ this lists all the configuration settings of a particular repository, stating th
 
 git status
 Used to view pending files that are unstaged/untracked, and uncommited
+
 
 git rm name_of_file.py 
 Is used to remove the file with name name_of_file.py
@@ -68,3 +72,10 @@ The ID is called a Hash, it is calculated using an algorithm called SHA1
 The git log command can be called with an extra number parameter indicating the number of commit logs you want to see. Say you want to see the last three commits, use the git log -3
 
 
+******CLONING AND PUSHING REPOS********
+git clone command is used to clone a remote repository using the its url
+git clone https://www.gihub.com/drgarielcodes/learn_python.git 
+
+This is done at the begining of a project.
+If however you have initialized a local and a remote repository, you can connect oth repos using the git remote command from the terminal
+git remote add origin https://www.gihub.com/drgarielcodes/learn_python.git

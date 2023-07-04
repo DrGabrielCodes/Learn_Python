@@ -1,0 +1,36 @@
+Version COntrol Systems (VCS) is a system used to manage file changes over time. 
+It allows pogrammers to collaborate with team members and work more effectively
+
+Git is one of the most popular VCS
+
+Git is a open source, actively maintained VCS compatible with many operating systems and IDEs.
+it records changes as a stream of snapshots know as commit.
+
+
+******GIT REPOSITORY*********
+To use Git for a particular project, you need to initialize a Git repository, this is like the main contaner or folder that houses everything in your code. Before you initialize make sure to create and open this folder in the command line
+
+Then use the command below to initialize your new repository
+"git init"
+
+
+Git is a VCS while GitHub is hosting service for Git repositories.
+
+******STATE OF FILES ********
+Files in a Git repository can have 3 basic statuses, which include
+1) Untracked
+2) Staged
+3) Committed
+
+UNTRACKED FILES ---- These are files that have been created, but the system has not yet been informed to track these files. So technically changes made here are not tracked. 
+Use git add command <filename> to add an untracked file to the staged state.
+
+STAGED FILES ---- These are files that have been staged, ready to be committed. Any change made here is tracked by the system. 
+Use git commmit command to commit all staged files.
+
+Committed files ---- These are files that have been saved and tracked to the repository. It represent snapshot of the files in the working tree.
+
+
+To find out about the status of a particular file, the git status command is used.
+
+If you dont want git to not track specific files, you can ignore them using the .gitignore file, anything listed here is ignored by git. This is a good way to ignore files that contains or stores sensitive informations like passwords and others that should not be visible to the public.

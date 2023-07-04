@@ -8,5 +8,6 @@
    "python.terminal.activateEnvInCurrentTerminal": false,
    "files.autoSave": "afterDelay",
    "python.analysis.typeCheckingMode": "basic",
-   "editor.wordWrap": "on"
+   "editor.wordWrap": "on",
+   "html.format.wrapLineLength": 80
 }
